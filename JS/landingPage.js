@@ -10,6 +10,7 @@ window.addEventListener("load",function(){
 
 
 function scrollToTop(){
+    console.log(-document.body.scrollHeight);
     window.scrollBy(0,-document.body.scrollHeight);
 }
 
