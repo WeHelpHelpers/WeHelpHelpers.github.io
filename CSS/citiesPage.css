@@ -88,7 +88,7 @@
 .citiesPage .card .box .contentBx div{
     transform-style: preserve-3d;
     padding: 20px;
-    background: linear-gradient(45deg,#fe0061,#3bf2ff);
+    background: linear-gradient(45deg,#fe0061,#ffe81e);    
     transform: translateZ(100px);
 }
 
@@ -96,6 +96,7 @@
     color: #fff;
     font-size: 16px;
     text-align: justify;
+    padding: 5px 0;
 }
 
 @media screen and (max-width: 768px) {
