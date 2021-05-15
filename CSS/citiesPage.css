@@ -60,6 +60,16 @@
     background: #333;
 }
 
+.citiesPage .card .box .cityName img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
 .citiesPage .card .box .cityName h1{
     position: absolute;
     top: 50%;
@@ -68,6 +78,7 @@
     color: #fff;
     font-size: 45px;
     letter-spacing: 3px;
+    margin: 0;
 }
 
 .citiesPage .card .box .contentBx{
