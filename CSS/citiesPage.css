@@ -7,15 +7,15 @@
     transition: 1s ease;
 }
 
-.citiesPage .container{
-    width: 100%;
-    margin: auto;
-}
-
 .citiesPage .sectionTitle{
     font-size: 50px;
     color: #000;
     text-align: center;
+}
+
+.citiesPage .container{
+    width: 100%;
+    margin: auto;
 }
 
 .citiesPage .container .containerMain{
@@ -24,7 +24,7 @@
     align-items: center;
     flex-wrap: wrap;
     transform-style: preserve-3d;
-    width: 1200px;
+    width: 90vw;
     margin: auto;
 }
 
@@ -32,7 +32,7 @@
     position: relative;
     height: 330px;
     width: 330px;
-    margin: 20px 0;
+    margin: 20px 10px;
     transform-style: preserve-3d;
     perspective: 1000px;
 }
@@ -108,17 +108,4 @@
     font-size: 16px;
     text-align: justify;
     padding: 5px 0;
-}
-
-@media screen and (max-width: 768px) {
-    .citiesPage .container .containerMain{
-        width: 720px;
-    }
-}
-
-
-@media screen and (max-width: 375px) {
-    .citiesPage .container .containerMain{
-        width: 350px;
-    }
 }

@@ -84,5 +84,5 @@ function Cities(props) {
     );
 }
 
-let domContainer = document.querySelector('.citiesPage .container');
-ReactDOM.render(<AllCities />, domContainer);
+let citiesContainer = document.querySelector('.citiesPage .container');
+ReactDOM.render(<AllCities />, citiesContainer);

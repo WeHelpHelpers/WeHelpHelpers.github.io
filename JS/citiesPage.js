@@ -141,8 +141,8 @@ function Cities(props) {
   );
 }
 
-let domContainer = document.querySelector(".citiesPage .container");
+let citiesContainer = document.querySelector(".citiesPage .container");
 ReactDOM.render(
   /*#__PURE__*/ React.createElement(AllCities, null),
-  domContainer
+  citiesContainer
 );
