@@ -26,7 +26,7 @@
 }
 
 .achievementsPage .containerMain .card{
-    width: 200px;
+    width: 300px;
     margin: 20px 0;
     display: flex;
     flex-direction: column;
@@ -35,19 +35,18 @@
 }
 
 .achievementsPage .containerMain .card img{
-    /* width: 150px; */
-    height: 120px;
+    height: 150px;
 }
 
 .achievementsPage .containerMain .card span{
     color: #61257A;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 600;
 }
 
 .achievementsPage .containerMain .card p{
     color: #32323C;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
     text-transform: uppercase;
     line-height: 28px;

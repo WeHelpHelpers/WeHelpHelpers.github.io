@@ -54,7 +54,7 @@ const achievementsList = [
   {
     img: "Images/glucose.png",
     count: 193,
-    content: "Boxes to Poor"
+    content: "Glucose Boxes to Poor"
   }
 ];
 
