@@ -19,7 +19,15 @@ const citiesList = [
   		para1: 'Our high-spirited team of volunteers at Kathiawar or the land of the Gohils has never failed in giving back to the community, be it in any form.',
       	para2: 'They have strived hard to make the city clean and green, distribute everyday essentials amongst the needy, imbibe living values among children and support the police workforce.'
 	},
-  	{
+	{
+		img: "Images/dakor.png",
+		name: "Dakor",
+		para1:
+		  "The city famous for its grand temple of Shree Ranchhodraiji, is one of the earliest to be coined with the title of a pilgrimage center in Gujarat.",
+		para2:
+		  "Our volunteers residing here believe in animal care and welfare. They have come forward to provide the basic needs to animals - food and water, to fight the common cause of their death, i.e, starvation."
+	},
+	{
        	img: 'Images/rajkot.png',
 		name: 'Rajkot',
   		para1: "The city of paintings is one of the most flourishing cities. It is the fourth largest city in Gujarat. More than 15% of the population lives below the poverty line.",

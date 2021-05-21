@@ -46,6 +46,14 @@ const citiesList = [
       "They have strived hard to make the city clean and green, distribute everyday essentials amongst the needy, imbibe living values among children and support the police workforce."
   },
   {
+    img: "Images/dakor.png",
+    name: "Dakor",
+    para1:
+      "The city famous for its grand temple of Shree Ranchhodraiji, is one of the earliest to be coined with the title of a pilgrimage center in Gujarat.",
+    para2:
+      "Our volunteers residing here believe in animal care and welfare. They have come forward to provide the basic needs to animals - food and water, to fight the common cause of their death, i.e, starvation."
+  },
+  {
     img: "Images/rajkot.png",
     name: "Rajkot",
     para1:
