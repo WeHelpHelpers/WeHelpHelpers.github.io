@@ -87,8 +87,6 @@ const recognitionsList = [
 function Timeline(){
 	return (
       <div className="timeline-container" id="timeline-1">
-        <TimelineNavPage />
-        <ChoiceBox />
     	<div className='timeline active' id='page1'>
         {drivesList.map((drive) => {
         	return <TimilineItem text={drive.text} img={drive.img} title={drive.title} desc={drive.desc} />
@@ -112,24 +110,6 @@ function TimilineItem(props) {
         </div >
         </div>
     );
-}
-
-function TimelineNavPage() {
-	return (
-    	<div className='timelineNavPage'>
-			<img src="Images/whh.png" alt="" /> 
-        	<h1 class="name">We Help Helpers</h1>
-		</div>
-    )
-}
-
-function ChoiceBox() {
-  	return (
-    	<div className='choiceBox'>
-     <button class="active" data-page="page1">Drives</button>
-     <button data-page="page2">Recognition</button>        
-        </div>
-    )
 }
 
 let timelineContainer = document.querySelector('.dataBox');
