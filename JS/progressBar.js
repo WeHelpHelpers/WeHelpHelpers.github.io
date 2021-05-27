@@ -18,10 +18,10 @@ PageScrollIndicator.createProgressBar = function(progressBarLocation, contentToT
     // on how far the contentToTrack elemt has been scrolled
     $(window).scroll(function(e){
         var pageHeight = $(window).height();
-        var $container = $(contentToTrack);
+        var containerHeight = document.documentElement.scrollHeight;
 
         // Adjusted height
-        var adjustedHeight = $container.innerHeight() - pageHeight;
+        var adjustedHeight = containerHeight - pageHeight;
         var progress = (($(window).scrollTop() / adjustedHeight) * 100);
         $progressBarElement.css("width", progress + "%");
   });

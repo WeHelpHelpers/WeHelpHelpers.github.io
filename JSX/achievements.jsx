@@ -33,7 +33,7 @@ const achievementsList = [
   },
   {
     img: 'Images/refreshments.png',
-    count: 71,
+    count: 251,
     content: 'refreshments to policemen'
   },
   {

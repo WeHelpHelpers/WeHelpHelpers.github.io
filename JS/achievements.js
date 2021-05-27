@@ -33,7 +33,7 @@ const achievementsList = [
   },
   {
     img: "Images/refreshments.png",
-    count: 71,
+    count: 251,
     content: "refreshments to policemen"
   },
   {
@@ -101,4 +101,7 @@ ReactDOM.render(
   achievementsContainer
 );
 
-$('.counter').counterUp();
+$('.counter').counterUp({
+  delay: 20,
+  time: 1000,
+});

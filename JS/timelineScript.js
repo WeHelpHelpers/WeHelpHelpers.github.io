@@ -220,7 +220,8 @@ ReactDOM.render(
               ")"
           );
           selectors.item.last().addClass(selectors.activeClass);
-        } else if (pos <= max - 40 && pos >= min) {
+        } else if (pos <= max - 40 && pos >= min - 80) {
+          console.log("Pos: " + pos + ", Max: " + max + ", Min: " + min);
           selectors.id.css(
             "background-image",
             "url(" +
