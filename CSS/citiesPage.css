@@ -3,8 +3,9 @@
     top: 100vh;
     min-height: 100vh;
     width: 100vw;
-    padding: 100px 0;
+    padding-bottom: 100px;
     transition: 1s ease;
+    font-family: "Josefin Sans", "Segoe UI", Arial, sans-serif;
 }
 
 .citiesPage .sectionTitle{

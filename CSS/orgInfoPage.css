@@ -1,253 +1,256 @@
-  .orgInfoPage {
-    background-color: #ffcc57;
-    width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Padauk&display=swap');
+
+.orgInfoPage {
+  background-color: #ffcc57;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orgInfoPage .containerMain {
+  width: 90vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.orgInfoPage .containerMain .card {
+  height: 500px;
+  width: 100%;
+  position: relative;
+  border: 5px solid #e9ae26;
+  margin: 50px 0;
+  overflow: hidden;
+  box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+.orgInfoPage .card .image_data {
+  height: 500px;
+  width: 750px;
+  background-color: #e9ae26;
+  overflow: hidden;
+  position: absolute;
+}
+
+.orgInfoPage .card.left .image_data {
+  left: 0;
+  top: 0;
+}
+
+.orgInfoPage .card.right .image_data {
+  right: 0;
+  top: 0;
+}
+
+.orgInfoPage .card .image_data .background_image {
+  width: 100%;
+  height: 100%;
+}
+
+.orgInfoPage .card .post_data {
+  width: 1000px;
+  height: 500px;
+  z-index: 5;
+  background: #fff;
+  position: absolute;
+}
+
+.orgInfoPage .card.left .post_data {
+  right: -400px;
+  top: 0;
+  transform: skewX(-20deg);  
+}
+
+.orgInfoPage .card.right .post_data {
+  left: -400px;
+  top: 0;
+  transform: skewX(20deg);  
+}
+
+.orgInfoPage .card .post_data .container {
+  height: 400px;
+  width: 500px;
+  position: relative;
+}
+
+.orgInfoPage .card.left .post_data .container {
+  transform: skewX(20deg);
+  left: 50px;
+  top: 50px;
+}
+
+.orgInfoPage .card.right .post_data .container {
+  transform: skewX(-20deg);
+  left: 450px;
+  top: 50px;
+}
+
+.orgInfoPage .card .post_data .title {
+  font-family: "Padauk";  
+  font-size: 50px;
+}
+
+.orgInfoPage .card.left .post_data .title {
+  text-align: right;
+}
+
+.orgInfoPage .card.right .post_data .title {
+  text-align: left;
+}
+
+.orgInfoPage .card .post_data .description {
+  text-align: justify;
+  font-size: 20px;
+  padding-top: 30px;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
+}
+
+.orgInfoPage .card .post_data .description p{
+  padding: 5px 0;
+  font-family: "Padauk";  
+}
+
+.orgInfoPage .card:nth-of-type(3) .post_data .title {
+  font-size: 35px;
+}
+
+.orgInfoPage .card:nth-of-type(3) .post_data .description {
+  padding-top: 40px;
+}
+
+@media screen and (max-width: 1125px) {
+  .orgInfoPage .card .post_data .container {
+    width: 300px;
+    height: 450px;
   }
-  
-  .orgInfoPage .containerMain {
-    width: 90vw;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+
+  .orgInfoPage .card.left .post_data {
+    right: -600px;
+
   }
-  
-  
+
+  .orgInfoPage .card.left .post_data .container {
+    left: 70px;
+  }
+
+  .orgInfoPage .card.right .post_data {
+    left: -600px;
+  }
+
+  .orgInfoPage .card.right .post_data .container {
+    left: 625px;
+  }
+
+  .orgInfoPage .card .post_data .description {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 900px) {
   .orgInfoPage .containerMain .card {
-    height: 500px;
+    width: 550px;
+    height: 650px;
+  }
+
+  .orgInfoPage .containerMain .card:last-of-type {
+    height: 700px;
+  }
+
+  .orgInfoPage .containerMain .card:last-of-type .post_data {
+    height: 700px;
+  }
+
+  .orgInfoPage .card.left .image_data,
+  .orgInfoPage .card.right .image_data {
+    left: 0;
+    top: 0;
+    height: 360px;
+    width: 550px;
+  }
+
+  .orgInfoPage .card.left .post_data,
+  .orgInfoPage .card.right .post_data {
+    left: 0;
+    top: 0px;
+    height: 650px;
     width: 100%;
-    position: relative;
-    background-color: #e9ae26;
-    margin: 50px 0;
-    overflow: hidden;
-    box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.5);
+    transform: skewX(0);
+    background-color: transparent;
   }
-  
-  .orgInfoPage .card .image_data {
-    height: 500px;
-    width: 750px;
-    background-color: #e9ae26;
-    overflow: hidden;
-    position: absolute;
-  }
-  
-  .orgInfoPage .card.left .image_data {
+
+  .orgInfoPage .card.left .post_data .container,
+  .orgInfoPage .card.right .post_data .container {
+    transform: skewX(0);
+    width: 100%;
+    height: 100%;
     left: 0;
     top: 0;
   }
   
-  .orgInfoPage .card.right .image_data {
-    right: 0;
-    top: 0;
-  }
-  
-  .orgInfoPage .card .image_data .background_image {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .orgInfoPage .card .post_data {
-    width: 1000px;
-    height: 500px;
-    z-index: 5;
-    background: #e9ae26;
-    position: absolute;
-  }
-  
-  .orgInfoPage .card.left .post_data {
-    right: -400px;
-    top: 0;
-    transform: skewX(-20deg);  
-  }
-  
-  .orgInfoPage .card.right .post_data {
-    left: -400px;
-    top: 0;
-    transform: skewX(20deg);  
-  }
-  
-  .orgInfoPage .card .post_data .container {
-    height: 400px;
-    width: 500px;
-    position: relative;
-  }
-  
-  .orgInfoPage .card.left .post_data .container {
-    transform: skewX(20deg);
-    left: 50px;
-    top: 50px;
-  }
-  
-  .orgInfoPage .card.right .post_data .container {
-    transform: skewX(-20deg);
-    left: 450px;
-    top: 50px;
-  }
-  
-  .orgInfoPage .card .post_data .title {
-    font-size: 50px;
-  }
-  
-  .orgInfoPage .card.left .post_data .title {
-    text-align: right;
-  }
-  
-  .orgInfoPage .card.right .post_data .title {
-    text-align: left;
-  }
-  
   .orgInfoPage .card .post_data .description {
-    text-align: justify;
-    font-size: 20px;
-    padding-top: 30px;
-    line-height: 1.2;
-    font-family: "HelveticaNeue-Light";
-    letter-spacing: 0.5px;
-    word-spacing: 2px;
+    font-size: 18px;
+    padding: 30px;
   }
-  
-  .orgInfoPage .card .post_data .description p{
-    padding: 5px 0;
-  }
-  
-  .orgInfoPage .card:nth-of-type(3) .post_data .title {
-    font-size: 35px;
-  }
-  
+
   .orgInfoPage .card:nth-of-type(3) .post_data .description {
-    padding-top: 40px;
+    padding-top: 30px;
+  }
+
+  .orgInfoPage .card.left .post_data .title,
+  .orgInfoPage .card.right .post_data .title {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 360px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #ffcc57;
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .orgInfoPage .containerMain .card {
+    width: 300px;
+    height: 530px;
   }
   
-  @media screen and (max-width: 1125px) {
-    .orgInfoPage .card .post_data .container {
-      width: 300px;
-      height: 450px;
-    }
-  
-    .orgInfoPage .card.left .post_data {
-      right: -600px;
-  
-    }
-  
-    .orgInfoPage .card.left .post_data .container {
-      left: 70px;
-    }
-  
-    .orgInfoPage .card.right .post_data {
-      left: -600px;
-    }
-  
-    .orgInfoPage .card.right .post_data .container {
-      left: 625px;
-    }
-  
-    .orgInfoPage .card .post_data .description {
-      font-size: 16px;
-    }
+  .orgInfoPage .containerMain .card:nth-of-type(3),
+  .orgInfoPage .containerMain .card:nth-of-type(3) .post_data {
+    height: 570px;
+  }
+
+  .orgInfoPage .containerMain .card:last-of-type,
+  .orgInfoPage .containerMain .card:last-of-type .post_data {
+    height: 650px;
   }
   
-  @media screen and (max-width: 900px) {
-    .orgInfoPage .containerMain .card {
-      width: 550px;
-      height: 650px;
-    }
-  
-    .orgInfoPage .containerMain .card:last-of-type {
-      height: 700px;
-    }
-  
-    .orgInfoPage .containerMain .card:last-of-type .post_data {
-      height: 700px;
-    }
-  
-    .orgInfoPage .card.left .image_data,
-    .orgInfoPage .card.right .image_data {
-      left: 0;
-      top: 0;
-      height: 360px;
-      width: 550px;
-    }
-  
-    .orgInfoPage .card.left .post_data,
-    .orgInfoPage .card.right .post_data {
-      left: 0;
-      top: 0px;
-      height: 650px;
-      width: 100%;
-      transform: skewX(0);
-      background-color: transparent;
-    }
-  
-    .orgInfoPage .card.left .post_data .container,
-    .orgInfoPage .card.right .post_data .container {
-      transform: skewX(0);
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-    }
-   
-    .orgInfoPage .card .post_data .description {
-      font-size: 18px;
-      padding: 30px;
-    }
-  
-    .orgInfoPage .card:nth-of-type(3) .post_data .description {
-      padding-top: 30px;
-    }
-  
-    .orgInfoPage .card.left .post_data .title,
-    .orgInfoPage .card.right .post_data .title {
-      background-color: rgba(0, 0, 0, 0.5);
-      height: 360px;
-      justify-content: center;
-      display: flex;
-      align-items: center;
-      color: #ffcc57;
-      text-align: center;
-    }
+  .orgInfoPage .card.left .image_data, 
+  .orgInfoPage .card.right .image_data {
+    width: 300px;
+    height: 200px;
   }
-  
-  
-  @media screen and (max-width: 600px) {
-    .orgInfoPage .containerMain .card {
-      width: 300px;
-      height: 530px;
-    }
-    
-    .orgInfoPage .containerMain .card:nth-of-type(3),
-    .orgInfoPage .containerMain .card:nth-of-type(3) .post_data {
-      height: 570px;
-    }
-  
-    .orgInfoPage .containerMain .card:last-of-type,
-    .orgInfoPage .containerMain .card:last-of-type .post_data {
-      height: 650px;
-    }
-    
-    .orgInfoPage .card.left .image_data, 
-    .orgInfoPage .card.right .image_data {
-      width: 300px;
-      height: 200px;
-    }
-  
-    .orgInfoPage .card.left .post_data, 
-    .orgInfoPage .card.right .post_data {
-      height: 530px;
-    }
-  
-    .orgInfoPage .card.left .post_data .title,
-    .orgInfoPage .card.right .post_data .title {
-      height: 200px;
-      font-size: 30px;
-    }
-  
-    .orgInfoPage .card .post_data .description {
-      font-size: 16px;
-      padding: 10px;
-    }
+
+  .orgInfoPage .card.left .post_data, 
+  .orgInfoPage .card.right .post_data {
+    height: 530px;
   }
+
+  .orgInfoPage .card.left .post_data .title,
+  .orgInfoPage .card.right .post_data .title {
+    height: 200px;
+    font-size: 30px;
+  }
+
+  .orgInfoPage .card .post_data .description {
+    font-size: 16px;
+    padding: 10px;
+  }
+}

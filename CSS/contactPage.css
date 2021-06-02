@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.contactDonatePage {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.contactDonatePage .navPage {
+  width: 100vw;
+  background: #000;
+  color: #ffcc57;
+  z-index: 10;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: "Josefin Sans", "Segoe UI", Arial, sans-serif;
+}
+
+.contactDonatePage .navPage .name {
+  font-size: 25px;
+  padding: 0 10px;
+  position: absolute;
+  top: 15px;
+  left: 105px;
+}
+
+.contactDonatePage .navPage img {
+  height: 40px;
+  position: absolute;
+  top: 15px;
+  left: 50px;
+}
+
+.contactDonatePage .navPage nav {
+position: absolute;
+width: 40%;
+right: 20px;
+top: 25px;
+opacity: 1;
+}
+
+.contactDonatePage .navPage nav ul {
+width: 100%;
+font-size: 18px;
+display: flex;
+flex-direction: row;
+list-style: none;
+justify-content: space-around;
+transition: all 1s ease-in-out;
+}
+
+.contactDonatePage .navPage nav ul a {
+text-decoration: none;
+color: #ffcc57;
+position: relative;
+}
+
+.contactDonatePage .navPage nav ul li {
+height: 120%;
+width: 120%;
+transform: skew(-20deg);
+display: flex;
+justify-content: center;
+transition: 0.3s;
+}
+
+.contactDonatePage .navPage nav ul li p {
+transform: skew(20deg);
+}
+
+.contactDonatePage .navPage nav ul span {
+position: absolute;
+width: 120%;
+height: 120%;
+transform: skew(-20deg);
+background-color: #ffcc57;
+left: 100%;
+opacity: 0;
+transition: 0.3s;
+}
+
+.contactDonatePage .navPage nav ul a:hover span {
+opacity: 1;
+left: 0;
+}
+
+.contactDonatePage .navPage nav ul a:hover {
+color: #111;
+}
+
+.contactDonatePage .donateSection {
+  width: 100vw;
+  height: 500px;
+  background-image: url('../Images/01Mar2021.jpeg');
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contactDonatePage .donateSection .textBox {
+  height: 450px;
+  width: 475px;
+  position: relative;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 20px;
+}
+
+.contactDonatePage .donateSection .textBox .title {
+  font-size: 40px;
+  letter-spacing: 2px;
+  word-spacing: 1px;
+}
+
+.contactDonatePage .donateSection .textBox .separator {
+  height: 2px;
+  width: 90%;
+  background: #ffcc57;
+  margin: 10px 0;
+}
+
+.contactDonatePage .donateSection .textBox .title span {
+  color: #e9ae26;
+  font-weight: 800;
+}
+
+.contactDonatePage .donateSection .textBox p {
+  padding: 10px 0;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+}
+
+.contactDonatePage .donateSection .textBox .quote {
+  font-weight: 800;
+  text-align: center;
+}
+
+.contactDonatePage .donateSection .textBox .donateButton {
+  width: fit-content;
+  height: fit-content;
+  background: #e9ae26;
+  position: relative;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight:bold;
+  letter-spacing: 2px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.contactDonatePage .contactSection {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  padding-top: 5px; 
+  font-size: 25px;
+  background: #000;
+  color: #ffcc57;
+  min-height: calc(100vh - 570px);  
+}
+
+.contactDonatePage .contactSection .icons {
+  padding: 5px 0;
+}
+
+.contactDonatePage .contactSection .icons i {
+  font-size: 30px;
+  margin: 0 10px;
+}
+
+.contactDonatePage .contactSection .icons i:first-of-type {
+  color: #bb001b;
+}
+
+.contactDonatePage .contactSection .icons i:nth-of-type(2) {
+  color: #4267b2;
+}
+
+.contactDonatePage .contactSection .icons i:nth-of-type(3) {
+  color: #1dA1f2;
+}
+
+.contactDonatePage .contactSection .icons i:nth-of-type(4) {
+  color: #dd2a7b;
+}

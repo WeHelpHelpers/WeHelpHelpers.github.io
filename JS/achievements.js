@@ -103,5 +103,5 @@ ReactDOM.render(
 
 $('.counter').counterUp({
   delay: 20,
-  time: 1000,
+  time: 800,
 });
