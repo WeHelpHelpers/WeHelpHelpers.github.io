@@ -1,0 +1,85 @@
+.navbar {
+  width: 100vw;
+  background: #000;
+  color: #ffcc57;
+  z-index: 10;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: "Josefin Sans", "Segoe UI", Arial, sans-serif;
+}
+
+.navbar .name {
+  font-size: 25px;
+  padding: 0 10px;
+  position: absolute;
+  top: 20px;
+  left: 90px;
+}
+
+.navbar img {
+  position: absolute;
+  height: 40px;
+  left: 50px;
+  top: 35px;
+  transform: translate(-50%, -50%);
+}
+
+.navbar nav {
+position: absolute;
+width: 40%;
+right: 20px;
+top: 25px;
+opacity: 1;
+}
+
+.navbar nav ul {
+width: 100%;
+font-size: 18px;
+display: flex;
+flex-direction: row;
+list-style: none;
+justify-content: space-around;
+transition: all 1s ease-in-out;
+}
+
+.navbar nav ul a {
+text-decoration: none;
+color: #ffcc57;
+position: relative;
+}
+
+.navbar nav ul li {
+height: 120%;
+width: 120%;
+transform: skew(-20deg);
+display: flex;
+justify-content: center;
+transition: 0.3s;
+}
+
+.navbar nav ul li p {
+transform: skew(20deg);
+}
+
+.navbar nav ul span {
+position: absolute;
+width: 120%;
+height: 120%;
+transform: skew(-20deg);
+background-color: #ffcc57;
+left: 100%;
+opacity: 0;
+transition: 0.3s;
+}
+
+.navbar nav ul a:hover span {
+opacity: 1;
+left: 0;
+}
+
+.navbar nav ul a:hover {
+color: #111;
+}

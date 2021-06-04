@@ -15,91 +15,6 @@ body {
   width: 100vw;
 }
 
-.contactDonatePage .navPage {
-  width: 100vw;
-  background: #000;
-  color: #ffcc57;
-  z-index: 10;
-  height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  font-family: "Josefin Sans", "Segoe UI", Arial, sans-serif;
-}
-
-.contactDonatePage .navPage .name {
-  font-size: 25px;
-  padding: 0 10px;
-  position: absolute;
-  top: 15px;
-  left: 105px;
-}
-
-.contactDonatePage .navPage img {
-  height: 40px;
-  position: absolute;
-  top: 15px;
-  left: 50px;
-}
-
-.contactDonatePage .navPage nav {
-position: absolute;
-width: 40%;
-right: 20px;
-top: 25px;
-opacity: 1;
-}
-
-.contactDonatePage .navPage nav ul {
-width: 100%;
-font-size: 18px;
-display: flex;
-flex-direction: row;
-list-style: none;
-justify-content: space-around;
-transition: all 1s ease-in-out;
-}
-
-.contactDonatePage .navPage nav ul a {
-text-decoration: none;
-color: #ffcc57;
-position: relative;
-}
-
-.contactDonatePage .navPage nav ul li {
-height: 120%;
-width: 120%;
-transform: skew(-20deg);
-display: flex;
-justify-content: center;
-transition: 0.3s;
-}
-
-.contactDonatePage .navPage nav ul li p {
-transform: skew(20deg);
-}
-
-.contactDonatePage .navPage nav ul span {
-position: absolute;
-width: 120%;
-height: 120%;
-transform: skew(-20deg);
-background-color: #ffcc57;
-left: 100%;
-opacity: 0;
-transition: 0.3s;
-}
-
-.contactDonatePage .navPage nav ul a:hover span {
-opacity: 1;
-left: 0;
-}
-
-.contactDonatePage .navPage nav ul a:hover {
-color: #111;
-}
-
 .contactDonatePage .donateSection {
   width: 100vw;
   height: 500px;
@@ -186,18 +101,18 @@ color: #111;
   margin: 0 10px;
 }
 
-.contactDonatePage .contactSection .icons i:first-of-type {
+.contactDonatePage .contactSection .icons a:first-of-type i {
   color: #bb001b;
 }
 
-.contactDonatePage .contactSection .icons i:nth-of-type(2) {
-  color: #4267b2;
+.contactDonatePage .contactSection .icons a:nth-of-type(2) i {
+  color: #4267B2;
 }
 
-.contactDonatePage .contactSection .icons i:nth-of-type(3) {
+.contactDonatePage .contactSection .icons a:nth-of-type(3) i {
   color: #1dA1f2;
 }
 
-.contactDonatePage .contactSection .icons i:nth-of-type(4) {
+.contactDonatePage .contactSection .icons a:nth-of-type(4) i {
   color: #dd2a7b;
 }

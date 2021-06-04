@@ -5,49 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>We Help Helpers</title>
         <link rel="shortcut icon" href="Images/whh_main.png" type="image/x-icon">
+        <link rel="stylesheet" href="CSS/navbar.css">
         <link rel="stylesheet" href="CSS/timelineStyle.css">
-        <link rel="stylesheet" href="CSS/progressBar.css">
     </head>
     <body>
         <!------------------------------Navigation Page------------------------------>
-        <div class="timelineNavPage">
-            <img src="Images/whh.png" alt=""> 
-            <h1 class="name">We Help Helpers</h1>
-            <nav>
-                <ul>
-                    <a href="index.html"><span></span><li><p>HOME</p></li></a>
-                    <a href="timeline.html"><span></span><li><p>TIMELINE</p></li></a>
-                    <a href="contact.html"><span></span><li><p>CONTACT US</p></li></a>
-                </ul>
-            </nav>
-        </div>
+        <div class="navbar"></div>
         <div class="choiceBox">
             <button class="active" data-page="page1">Drives</button>
             <button data-page="page2">Recognition</button>
         </div>
         <div class="dataBox"></div>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-            <script src="JS/progressBar.js"></script>
-            <script>
-                PageScrollIndicator.createProgressBar("#home", "#main");
-            </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
         <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+        <script src="JS/navbar.js"></script>
         <script src="JS/timelineScript.js"></script>
-        <script type="text/babel">
-            function Test() {
-  return /*#__PURE__*/ React.createElement(
-    "div",
-    null,
-    "This is a test section."
-  );
-}
-
-let achievementsContainer = document.querySelector(".dataBox div");
-ReactDOM.render(
-  /*#__PURE__*/ React.createElement(Test, null),
-  achievementsContainer
-);
-        </script>
     </body>
 </html>
