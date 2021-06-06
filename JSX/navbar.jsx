@@ -5,8 +5,10 @@ class NavBar extends React.Component{
 	render(){
       return(
 	    <div className='container'>
-          <img src="Images/whh.png" />
-          <h1 className='name'>We Help Helpers</h1>
+          <div className='header'>
+            <img src="Images/whh.png" />
+            <h1 className='name'>We Help Helpers</h1>
+          </div>
 	   	<NavLinks />
         </div>
       );
@@ -24,8 +26,21 @@ class NavLinks extends React.Component {
                         <a href="contact.html"><span></span><li><p>CONTACT US</p></li></a>
               
             </ul>
+          	<ToggleIcon />
           </nav>    	
       )
+    }
+}
+
+class ToggleIcon extends React.Component {
+	render(){
+    	return(
+        	<div className='toggleIcon'>
+            	<div className='line'></div>
+            	<div className='line'></div>
+            	<div className='line'></div>
+            </div>
+        )
     }
 }
 

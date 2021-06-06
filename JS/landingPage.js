@@ -17,3 +17,9 @@ function scrollToTop(){
 function scrollDown(){
     window.scrollBy(0,10)
 }
+
+const nav = document.querySelector(".landing nav");
+const toggleIcon = document.querySelector(".landing nav .toggleIcon");
+toggleIcon.addEventListener('click', function() {
+  nav.classList.toggle('active');
+})

@@ -7,15 +7,21 @@ class NavBar extends React.Component {
       {
         className: "container"
       },
-      /*#__PURE__*/ React.createElement("img", {
-        src: "Images/whh.png"
-      }),
       /*#__PURE__*/ React.createElement(
-        "h1",
+        "div",
         {
-          className: "name"
+          className: "header"
         },
-        "We Help Helpers"
+        /*#__PURE__*/ React.createElement("img", {
+          src: "Images/whh.png"
+        }),
+        /*#__PURE__*/ React.createElement(
+          "h1",
+          {
+            className: "name"
+          },
+          "We Help Helpers"
+        )
       ),
       /*#__PURE__*/ React.createElement(NavLinks, null)
     );
@@ -78,10 +84,37 @@ class NavLinks extends React.Component {
             /*#__PURE__*/ React.createElement("p", null, "CONTACT US")
           )
         )
-      )
+      ),
+      /*#__PURE__*/ React.createElement(ToggleIcon, null)
+    );
+  }
+}
+
+class ToggleIcon extends React.Component {
+  render() {
+    return /*#__PURE__*/ React.createElement(
+      "div",
+      {
+        className: "toggleIcon"
+      },
+      /*#__PURE__*/ React.createElement("div", {
+        className: "line"
+      }),
+      /*#__PURE__*/ React.createElement("div", {
+        className: "line"
+      }),
+      /*#__PURE__*/ React.createElement("div", {
+        className: "line"
+      })
     );
   }
 }
 
 let navbar = document.querySelector(".navbar");
 ReactDOM.render(/*#__PURE__*/ React.createElement(NavBar, null), navbar);
+
+const nav = document.querySelector(".navbar nav");
+const toggleIcon = document.querySelector(".navbar nav .toggleIcon");
+toggleIcon.addEventListener('click', function() {
+  nav.classList.toggle('active');
+})

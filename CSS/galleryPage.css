@@ -74,13 +74,23 @@ body {
 }
 
 @media screen and (max-width: 768px){
+  .gallerySection h1 {
+    width: 400px;
+    font-size: 2.3em;
+  }
+
   .gallerySection .gallery{
     display: grid;
     grid-template-columns: auto auto auto;
   }
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 450px){
+  .gallerySection h1 {
+    width: 250px;
+    font-size: 1.8em;
+  }
+
   .gallerySection .gallery{
     display: grid;
     grid-template-columns: auto auto;

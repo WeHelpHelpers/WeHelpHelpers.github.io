@@ -40,6 +40,18 @@ body {
     transition: 0.5s ease-in-out;
 }
 
+@media screen and (max-width:768px) {
+  .choiceBox button {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width:450px) {
+  .choiceBox button {
+    padding: 1rem 1rem;
+  }
+}
+
 
 .choiceBox button:first-of-type {
     border-radius: 6px 0 0 6px;
