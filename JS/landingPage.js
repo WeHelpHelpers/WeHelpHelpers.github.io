@@ -1,11 +1,25 @@
 window.addEventListener("scroll",function(){
     const landing = document.querySelector('.landing');
+    const orgInfoPage = document.querySelector('.orgInfoPage');
     landing.classList.toggle('sticky',window.scrollY > 0)
+    if (window.scrollY > 0) {
+        orgInfoPage.style.marginTop = '30vh';
+    }
+    else {
+        orgInfoPage.style.marginTop = '100vh';
+    }
 })
 
 window.addEventListener("load",function(){
     const landing = document.querySelector('.landing');
+    const orgInfoPage = document.querySelector('.orgInfoPage');
     landing.classList.toggle('sticky',window.scrollY > 0)
+    if (window.scrollY > 0) {
+        orgInfoPage.style.marginTop = '30vh';
+    }
+    else {
+        orgInfoPage.style.marginTop = '100vh';
+    }
 })
 
 

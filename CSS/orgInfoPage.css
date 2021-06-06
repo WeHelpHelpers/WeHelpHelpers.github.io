@@ -2,11 +2,13 @@
 
 .orgInfoPage {
   background-color: #ffcc57;
+  margin-top: 70vh;
   width: 100vw;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 1s ease-in-out;
 }
 
 .orgInfoPage .containerMain {
