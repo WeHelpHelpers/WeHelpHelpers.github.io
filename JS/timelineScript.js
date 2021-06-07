@@ -200,6 +200,32 @@ ReactDOM.render(
           .attr("src") +
         ")"
     );
+    $(".choiceBox button:first-of-type").click(function() {
+      console.log(selectors.item.first());
+      selectors.item.eq(0).addClass(selectors.activeClass);
+      selectors.id.css(
+        "background-image",
+        "url(" +
+          selectors.item
+            .first()
+            .find(selectors.img)
+            .attr("src") +
+          ")"
+      );  
+    });
+    $(".choiceBox button:last-of-type").click(function() {
+      console.log(selectors.item.first());
+      selectors.item.eq(10).addClass(selectors.activeClass);
+      selectors.id.css(
+        "background-image",
+        "url(" +
+          selectors.item
+            .eq(10)
+            .find(selectors.img)
+            .attr("src") +
+          ")"
+      );  
+    });
     var itemLength = selectors.item.length;
     $(window).scroll(function() {
       var max, min;
@@ -220,8 +246,7 @@ ReactDOM.render(
               ")"
           );
           selectors.item.last().addClass(selectors.activeClass);
-        } else if (pos <= max - 40 && pos >= min - 80) {
-          console.log("Pos: " + pos + ", Max: " + max + ", Min: " + min);
+        } else if (pos <= max - 40 && pos >= min - 160) {
           selectors.id.css(
             "background-image",
             "url(" +

@@ -9,11 +9,12 @@
 body {
   overflow-x: hidden;
   background-color: #000;
+  height: 100%;
 }
 
 .contactDonatePage {
   width: 100vw;
-  min-height: calc(100vh - 70px);
+  /* min-height: calc(100vh - 70px); */
 }
 
 .contactDonatePage .donateSection {
@@ -92,7 +93,8 @@ body {
   font-size: 25px;
   background: #000;
   color: #ffcc57;
-  min-height: calc(100vh - 570px);  
+  /* min-height: calc(100vh - 570px);   */
+  height: 150px;
 }
 
 .contactDonatePage .contactSection .icons {
@@ -144,5 +146,12 @@ body {
 
   .contactDonatePage .contactSection {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contactDonatePage .donateSection .textBox {
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
