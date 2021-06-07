@@ -2,57 +2,57 @@
 
 const achievementsList = [
   {
-    img: "Images/eatables.png",
+    img: "Images/achievementsPage/eatables.png",
     count: 1757,
     content: "Eatables Distributed"
   },
   {
-    img: "Images/blanket.png",
+    img: "Images/achievementsPage/blanket.png",
     count: 503,
     content: "Blankets to underprivileged"
   },
   {
-    img: "Images/clothes.png",
+    img: "Images/achievementsPage/clothes.png",
     count: 1952,
     content: "Clothes to Poor/Workers"
   },
   {
-    img: "Images/plant.png",
+    img: "Images/achievementsPage/plant.png",
     count: 68,
     content: "Plants/Saplings Planted"
   },
   {
-    img: "Images/mask.png",
+    img: "Images/achievementsPage/mask.png",
     count: 504,
     content: "Masks Distributed"
   },
   {
-    img: "Images/steam.png",
+    img: "Images/achievementsPage/steam.png",
     count: 206,
     content: "Steam Vaporizers to Policemen"
   },
   {
-    img: "Images/refreshments.png",
+    img: "Images/achievementsPage/refreshments.png",
     count: 251,
     content: "refreshments to policemen"
   },
   {
-    img: "Images/toys.png",
+    img: "Images/achievementsPage/toys.png",
     count: 249,
     content: "toys and stationery to poor children"
   },
   {
-    img: "Images/animals.png",
+    img: "Images/achievementsPage/animals.png",
     count: 4,
     content: "CIty animals helped"
   },
   {
-    img: "Images/cleaning.png",
+    img: "Images/achievementsPage/cleaning.png",
     count: 3,
     content: "Cleaning Drives"
   },
   {
-    img: "Images/glucose.png",
+    img: "Images/achievementsPage/glucose.png",
     count: 193,
     content: "Glucose Boxes to Poor"
   }

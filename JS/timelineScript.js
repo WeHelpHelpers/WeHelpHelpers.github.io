@@ -80,22 +80,23 @@ const drivesList = [
     desc: "On the occasion of Diwali, we distributed 1770+ clothes and 300+ blankets amongst those pushed to Queer Streets across six cities of Gujarat. We tried to make their Diwali merrier by keeping them warm and protected against the frosty weather."
   }
 ];
+
 const recognitionsList = [
   {
     text: "May 2021",
-    img: "Images/20Feb2021.jpeg",
+    img: "Images/timeline/recognition/zeeNews.jpeg",
     title: "ZEE News Media",
     desc: "Our team has always served its best and always will. We were privileged to receive a prestigious award by Zee News 24x7, as an appreciation for our work as Corona Warriors. We owe this to each and every member of our team for their timely efforts, and most importantly, to our donors whose support has helped us to further our mission."
   },
   {
     text: "May 2021",
-    img: "Images/20Feb2021.jpeg",
+    img: "Images/timeline/recognition/yolo.jpeg",
     title: "YOLO Foundation",
     desc: "Owing to the exceptional work in the past one year by our founders and all the volunteers throughout Gujarat, our story, idea and implementation of WeHelpHelpers since the start was shared on the social media handle of YOLO Foundation run by Jacqueline Fernandez."
   },
   {
     text: "May 2021",
-    img: "Images/20Feb2021.jpeg",
+    img: "Images/timeline/recognition/highOnLife.jpeg",
     title: " HIGH ON LIFE FOUNDATION",
     desc: "High On Life Foundation has been working for many years to spread awareness against drug abuse and to stop the youth from falling to drug addiction. For our contribution towards their cause and artwork stating and implying the stop of drug abuse, HOL Foundation along with the Govt. of Gujarat appreciated us for the same."
   }
@@ -246,7 +247,7 @@ ReactDOM.render(
               ")"
           );
           selectors.item.last().addClass(selectors.activeClass);
-        } else if (pos <= max - 40 && pos >= min - 160) {
+        } else if (pos <= max - 40 && pos >= min - 200) {
           selectors.id.css(
             "background-image",
             "url(" +

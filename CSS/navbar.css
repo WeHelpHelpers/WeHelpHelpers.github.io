@@ -5,6 +5,7 @@
   z-index: 10;
   height: 70px;
   position: relative;
+  font-family: "Josefin Sans", "Segoe UI", Arial, sans-serif;
 }
 
 .navbar .header {

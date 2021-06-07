@@ -65,24 +65,24 @@ const drivesList = [
 
 const recognitionsList = [
   {
-  	text: "May 2021",
-    img: "Images/14May2021.jpeg",
-	title: "ZEE News Media",
+    text: "May 2021",
+    img: "Images/timeline/recognition/zeeNews.jpeg",
+    title: "ZEE News Media",
     desc: "Our team has always served its best and always will. We were privileged to receive a prestigious award by Zee News 24x7, as an appreciation for our work as Corona Warriors. We owe this to each and every member of our team for their timely efforts, and most importantly, to our donors whose support has helped us to further our mission."
   },
   {
-  	text: "May 2021",
-    img: "Images/14May2021.jpeg",
-	title: "YOLO Foundation",
+    text: "May 2021",
+    img: "Images/timeline/recognition/yolo.jpeg",
+    title: "YOLO Foundation",
     desc: "Owing to the exceptional work in the past one year by our founders and all the volunteers throughout Gujarat, our story, idea and implementation of WeHelpHelpers since the start was shared on the social media handle of YOLO Foundation run by Jacqueline Fernandez."
   },
   {
-  	text: "May 2021",
-    img: "Images/14May2021.jpeg",
-	title: " HIGH ON LIFE FOUNDATION",
+    text: "May 2021",
+    img: "Images/timeline/recognition/highOnLife.jpeg",
+    title: " HIGH ON LIFE FOUNDATION",
     desc: "High On Life Foundation has been working for many years to spread awareness against drug abuse and to stop the youth from falling to drug addiction. For our contribution towards their cause and artwork stating and implying the stop of drug abuse, HOL Foundation along with the Govt. of Gujarat appreciated us for the same."
-  },
-]
+  }
+];
 
 function Timeline(){
 	return (
