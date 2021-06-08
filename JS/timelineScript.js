@@ -1,81 +1,64 @@
-function showPage(page) {
-    document.querySelectorAll(".timeline").forEach(div => {
-        div.classList = 'timeline';
-    })
-    document.querySelector(`#${page}`).classList = 'timeline active';
-}
-
-document.querySelectorAll(".choiceBox button").forEach(button => {
-    button.addEventListener("click",function() {
-          document.querySelectorAll(".choiceBox button").forEach(button => {
-            button.classList = '';
-          });
-          this.classList = 'active'
-          showPage(this.dataset.page);
-    })
-}); 
-
 /*---------------------------------------Drives Script------------------------------------- */
 "use strict";
 
 const drivesList = [
   {
     text: "14 May 2021",
-    img: "Images/14May2021.jpeg",
+    img: "Images/timeline/drives/14May2021.jpeg",
     title: "Bhavnagar",
     desc: "Celebrated Eid with the destitute by serving 180+ hot, fresh and tasty food packed with fully sanitised dishes, along with sugarcane juice."
   },
   {
     text: "10 May 2021",
-    img: "Images/10May2021.jpeg",
+    img: "Images/timeline/drives/10May2021.jpeg",
     title: "Bhavnagar",
     desc: "Distribution of Glucose boxes and Glucon-D to more than 100 pauperized families to make them aware of its importance for the energy generation and metabolism of the human body in the fight against COVID."
   },
   {
     text: "11 April 2021",
-    img: "Images/11Apr2021.jpeg",
+    img: "Images/timeline/drives/11Apr2021.jpeg",
     title: "Anand",
     desc: "Served 100+ biscuit packets and puff to the impoverished to overcome their hunger and sugarcane juices to keep them hydrated in the hot weather."
   },
   {
     text: "07 April 2021",
-    img: "Images/07Apr2021.jpeg",
+    img: "Images/timeline/drives/07Apr2021.jpeg",
     title: "Bhavnagar",
     desc: "Distribution of 50 fresh khichdi packets along with some clothes amongst the needy children."
   },
   {
     text: "15 March 2021",
-    img: "Images/15Mar2021.jpeg",
+    img: "Images/timeline/drives/15Mar2021.jpeg",
     title: "Vapi",
     desc: "Interacted with young and bright minds and taught them some drawing/coloring basics to boost their imagination. Played fun-learning games and offered a meal along with milk and chocolates to 75+ children as a memorable goodbye."
   },
   {
     text: "01 March 2021",
-    img: "Images/01Mar2021.jpeg",
+    img: "Images/timeline/drives/01Mar2021.jpeg",
     title: "Bhavnagar",
     desc: "Distribution of steam vaporizer machines along with a greeting card to the policemen, to applaud them for their courageous efforts to keep us safe 24x7 during the lockdown and ever through."
   },
   {
     text: "20 February 2021",
-    img: "Images/20Feb2021.jpeg",
+    img: "Images/timeline/drives/20Feb2021.jpeg",
     title: "Vadodara",
     desc: "Distribution of 90+ notebooks and crayons amongst the poor children to let out their creative side and dream bigger."
   },
   {
     text: "December 2020",
-    img: "Images/15Dec2020.jpeg",
+    img: "Images/timeline/drives/15Dec2020.jpeg",
     title: "Vadodara, Surat, Rajkot, Bharuch",
     desc: "Distribution of 200+ blankets amongst those who have no roof over their heads and zero protection against the biting cold. "
   },
   {
     text: "15 December 2020",
-    img: "Images/15Dec2020.jpeg",
+    img: "Images/timeline/drives/Dec2020.jpeg",
     title: "Valsad",
     desc: "We salute all the police officers who have been serving us throughout the pandemic, putting their lives at risk to maintain order during times like these."
   },
   {
     text: "November 2020",
-    img: "Images/15Dec2020.jpeg",
+    img: "Images/timeline/drives/Nov2020.jpeg",
     title: "Bhavnagar, Vapi Anand, Valsad",
     desc: "On the occasion of Diwali, we distributed 1770+ clothes and 300+ blankets amongst those pushed to Queer Streets across six cities of Gujarat. We tried to make their Diwali merrier by keeping them warm and protected against the frosty weather."
   }
@@ -106,38 +89,49 @@ function Timeline() {
   return /*#__PURE__*/ React.createElement(
     "div",
     {
-      className: "timeline-container",
-      id: "timeline-1"
+      className: "container"
     },
     /*#__PURE__*/ React.createElement(
       "div",
       {
-        className: "timeline active",
-        id: "page1"
+        className: "timeline-container active",
+        id: "timeline-1"
       },
-      drivesList.map((drive) => {
-        return /*#__PURE__*/ React.createElement(TimilineItem, {
-          text: drive.text,
-          img: drive.img,
-          title: drive.title,
-          desc: drive.desc
-        });
-      })
+      /*#__PURE__*/ React.createElement(
+        "div",
+        {
+          className: "timeline"
+        },
+        drivesList.map((drive) => {
+          return /*#__PURE__*/ React.createElement(TimilineItem, {
+            text: drive.text,
+            img: drive.img,
+            title: drive.title,
+            desc: drive.desc
+          });
+        })
+      )
     ),
     /*#__PURE__*/ React.createElement(
       "div",
       {
-        className: "timeline",
-        id: "page2"
+        className: "timeline-container",
+        id: "timeline-2"
       },
-      recognitionsList.map((recognition) => {
-        return /*#__PURE__*/ React.createElement(TimilineItem, {
-          text: recognition.text,
-          img: recognition.img,
-          title: recognition.title,
-          desc: recognition.desc
-        });
-      })
+      /*#__PURE__*/ React.createElement(
+        "div",
+        {
+          className: "timeline"
+        },
+        recognitionsList.map((recognition) => {
+          return /*#__PURE__*/ React.createElement(TimilineItem, {
+            text: recognition.text,
+            img: recognition.img,
+            title: recognition.title,
+            desc: recognition.desc
+          });
+        })
+      )
     )
   );
 }
@@ -201,32 +195,6 @@ ReactDOM.render(
           .attr("src") +
         ")"
     );
-    $(".choiceBox button:first-of-type").click(function() {
-      console.log(selectors.item.first());
-      selectors.item.eq(0).addClass(selectors.activeClass);
-      selectors.id.css(
-        "background-image",
-        "url(" +
-          selectors.item
-            .first()
-            .find(selectors.img)
-            .attr("src") +
-          ")"
-      );  
-    });
-    $(".choiceBox button:last-of-type").click(function() {
-      console.log(selectors.item.first());
-      selectors.item.eq(10).addClass(selectors.activeClass);
-      selectors.id.css(
-        "background-image",
-        "url(" +
-          selectors.item
-            .eq(10)
-            .find(selectors.img)
-            .attr("src") +
-          ")"
-      );  
-    });
     var itemLength = selectors.item.length;
     $(window).scroll(function() {
       var max, min;
@@ -265,3 +233,21 @@ ReactDOM.render(
 })(jQuery);
 
 $("#timeline-1").timeline();
+
+function showPage(page) {
+  document.querySelectorAll(".timeline-container").forEach(div => {
+      div.classList = 'timeline-container';
+  })
+  document.querySelector(`#${page}`).classList = 'timeline-container active';
+}
+
+document.querySelectorAll(".choiceBox button").forEach(button => {
+  button.addEventListener("click",function() {
+        document.querySelectorAll(".choiceBox button").forEach(button => {
+          button.classList = '';
+        });
+        this.classList = 'active'
+        $(`#${this.dataset.page}`).timeline();
+        showPage(this.dataset.page);
+  })
+}); 

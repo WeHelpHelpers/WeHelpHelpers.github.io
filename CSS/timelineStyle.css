@@ -72,14 +72,15 @@ body {
   color: #FFF;
 }
 
-.dataBox .timeline-container .timeline{
+.dataBox .timeline-container{
     transition: opacity 1s ease-in-out;
     opacity: 0;
     height: 0;
     overflow: hidden;
+    padding: 0;
 }
 
-.dataBox .timeline-container .timeline.active {
+.dataBox .timeline-container.active {
     opacity: 1;
     height: auto;
 }
