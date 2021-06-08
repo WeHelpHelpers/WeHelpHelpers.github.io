@@ -72,7 +72,7 @@ function Achievement(props) {
 	return (
 		<div className='card'>
 			<img src={props.img} />
-			<span className="counter">{props.count}</span>	   		 	   <p>{props.content.toUpperCase()}</p>
+			<span className="counter" data-count={props.count}>0</span>	   		 	   <p>{props.content.toUpperCase()}</p>
         </div>
     );
 }

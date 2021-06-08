@@ -46,13 +46,13 @@ const drivesList = [
   },
   {
     text: "December 2020",
-    img: "Images/timeline/drives/15Dec2020.jpeg",
+    img: "Images/timeline/drives/Dec2020.jpeg",
     title: "Vadodara, Surat, Rajkot, Bharuch",
     desc: "Distribution of 200+ blankets amongst those who have no roof over their heads and zero protection against the biting cold. "
   },
   {
     text: "15 December 2020",
-    img: "Images/timeline/drives/Dec2020.jpeg",
+    img: "Images/timeline/drives/15Dec2020.jpeg",
     title: "Valsad",
     desc: "We salute all the police officers who have been serving us throughout the pandemic, putting their lives at risk to maintain order during times like these."
   },

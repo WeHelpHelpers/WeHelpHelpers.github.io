@@ -86,9 +86,10 @@ function Achievement(props) {
     /*#__PURE__*/ React.createElement(
       "span",
       {
-        className: "counter"
+        className: "counter",
+        "data-count": props.count
       },
-      props.count
+      "0"
     ),
     "           ",
     /*#__PURE__*/ React.createElement("p", null, props.content.toUpperCase())
@@ -101,7 +102,35 @@ ReactDOM.render(
   achievementsContainer
 );
 
-$('.counter').counterUp({
-  delay: 20,
-  time: 800,
-});
+function countUp() {
+  $('.counter').each(function() {
+    var $this = $(this);
+    var oTop = $this.offset().top - window.innerHeight;
+    var countTo = $this.attr('data-count');
+    if ($this.text() == 0 && $(window).scrollTop() > oTop) {
+      $({
+        countNum: $this.text()
+      }).animate({
+        countNum: countTo
+      },
+      {
+        duration: 1000,
+        easing: 'swing',
+        step: function() {
+          $this.text(Math.floor(this.countNum));
+        },
+        complete: function() {
+          $this.text(this.countNum);
+        }
+      });
+    }
+    else if ($this.text() == countTo && $(window).scrollTop() < oTop) {
+      $this.text(0);
+    }  
+  });
+}
+
+$(window).scroll(countUp);
+
+$(window).ready(countUp);
+
