@@ -1,0 +1,48 @@
+.querySection {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    padding-top: 5px;
+    padding: 8px 20px; 
+    font-size: 25px;
+    background: #000;
+    color: #ffcc57;
+    /* min-height: calc(100vh - 570px);   */
+    height: auto;
+    font-family: "Josefin Sans", "Segoe UI", Arial, sans-serif;
+}
+
+.querySection .icons {
+    padding: 5px 0;
+}
+
+.querySection .icons i {
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+.querySection .icons a:first-of-type i {
+    color: #bb001b;
+}
+
+.querySection .icons a:nth-of-type(2) i {
+    color: #4267B2;
+}
+
+.querySection .icons a:nth-of-type(3) i {
+    color: #1dA1f2;
+}
+
+.querySection .icons a:nth-of-type(4) i {
+    color: #dd2a7b;
+}
+
+@media screen and (max-width: 768px) {
+    .querySection {
+        font-size: 20px;
+    }
+}
+

@@ -81,47 +81,6 @@ body {
   border-radius: 5px;
 }
 
-.contactDonatePage .contactSection {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; 
-  text-align: center;
-  padding-top: 5px;
-  padding: 0 20px; 
-  font-size: 25px;
-  background: #000;
-  color: #ffcc57;
-  /* min-height: calc(100vh - 570px);   */
-  height: 150px;
-}
-
-.contactDonatePage .contactSection .icons {
-  padding: 5px 0;
-}
-
-.contactDonatePage .contactSection .icons i {
-  font-size: 30px;
-  margin: 0 10px;
-}
-
-.contactDonatePage .contactSection .icons a:first-of-type i {
-  color: #bb001b;
-}
-
-.contactDonatePage .contactSection .icons a:nth-of-type(2) i {
-  color: #4267B2;
-}
-
-.contactDonatePage .contactSection .icons a:nth-of-type(3) i {
-  color: #1dA1f2;
-}
-
-.contactDonatePage .contactSection .icons a:nth-of-type(4) i {
-  color: #dd2a7b;
-}
-
 @media screen and (max-width: 768px) {
   .contactDonatePage .donateSection .textBox {
     height: 430px;
@@ -142,10 +101,6 @@ body {
     padding: 5px 0;
     font-size: 15px;
     letter-spacing: 1.5px;
-  }
-
-  .contactDonatePage .contactSection {
-    font-size: 20px;
   }
 }
 
