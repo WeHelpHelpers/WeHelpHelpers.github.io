@@ -66,6 +66,10 @@ body {
   text-align: center;
 }
 
+.contactDonatePage .donateSection .textBox a {
+  text-decoration: none;
+  color: white;
+}
 .contactDonatePage .donateSection .textBox .donateButton {
   width: fit-content;
   height: fit-content;
