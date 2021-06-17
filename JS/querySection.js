@@ -16,6 +16,15 @@ class QuerySection extends React.Component {
         /*#__PURE__*/ React.createElement(
           "a",
           {
+            href: "tel:9081929200"
+          },
+          /*#__PURE__*/ React.createElement("i", {
+            class: "fas fa-phone-alt"
+          })
+        ),
+        /*#__PURE__*/ React.createElement(
+          "a",
+          {
             href: "mailto: wehelphelpers@gmail.com"
           },
           /*#__PURE__*/ React.createElement("i", {
@@ -48,7 +57,7 @@ class QuerySection extends React.Component {
           /*#__PURE__*/ React.createElement("i", {
             class: "fab fa-instagram"
           })
-        )
+        ),
       )
     );
   }
