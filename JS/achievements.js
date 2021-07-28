@@ -38,7 +38,7 @@ const achievementsList = [
   },
   {
     img: "Images/achievementsPage/toys.png",
-    count: 249,
+    count: 330,
     content: "toys and stationery to poor children"
   },
   {
